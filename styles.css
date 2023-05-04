@@ -1,3 +1,30 @@
-body {
+html {
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+
+}
+
+body{
+    margin:0;
     background-color: black;
 }
+
+nav {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+
