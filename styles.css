@@ -9,6 +9,8 @@ body{
 }
 
 nav {
+    position: absolute;
+    width: 100%;
     padding: 20px 20px 20px 20px;
     display: flex;
     justify-content: space-around;
@@ -41,6 +43,10 @@ footer {
     color:rgb(92, 92, 230);
     text-align: center;
     border-top: 2px solid rgb(92, 92, 230);
+}
+
+.section {
+    height: 100vh;
 }
 
 .line1 {
@@ -76,7 +82,7 @@ footer {
 
 
 .hero {
-    margin-top: 10rem;
+
     color: rgb(92, 92, 230);
     display: flex;
     justify-content: center;
@@ -136,8 +142,8 @@ footer {
     text-align: center;
     border-top: 2px solid rgb(92, 92, 230);
     border-bottom: 2px solid rgb(92, 92, 230);
-
     padding: 20px;
+    height: 300px;
 }
 
 .testimonial-name {
