@@ -1,5 +1,15 @@
-.testimonials {
+.work-experience-line {
     position: absolute;
+    height: 80vh;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    top: 30%;
+}
+
+.testimonials {
+    position: relative;
     width: 80%;
     margin-top: 20rem;
     display: flex;
@@ -12,8 +22,7 @@
 .testimonial-card {
     width: 200px;
     text-align: center;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border: 2px solid black;
     padding: 20px;
     max-height: 300px;
 }
