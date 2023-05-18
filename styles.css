@@ -66,7 +66,7 @@ footer {
     top: 0;
     left: 10%; 
     width: 2px;
-    height: 100vh; 
+    height: 100%; 
     background-color: black; 
 }
 
@@ -75,7 +75,7 @@ footer {
     top: 0;
     left: 90%; 
     width: 2px;
-    height: 100vh; 
+    height: 100%; 
     background-color: black; 
 }
 
@@ -90,6 +90,15 @@ footer {
     height: auto;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
+.nav-hamburger {
+    height: auto;
+    width: 30px;
+    margin-right: 20px;
+}
 
 .hero {
 
@@ -151,6 +160,7 @@ footer {
     width: 30%;
     padding: 20px;
     position: relative;
+    min-width: 300px;
 }
 
 .about-me-content.left{
@@ -170,3 +180,24 @@ footer {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: 20px;
+    }
+
+    svg {
+        width: 40px;
+        transform: translateX(-30%);
+    }
+    
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+  
+  }
