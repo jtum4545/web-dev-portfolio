@@ -2,3 +2,5 @@ header-icon
 https://www.svgrepo.com/svg/121265/snowflake?edit=true
 hero-icon
 https://pixabay.com/photos/man-loneliness-sea-evening-2915187/
+nav-menu
+https://freesvg.org/menu-icon-28851
