@@ -4,7 +4,17 @@ img {
     width: 500px;
 }
 
+button {
+    padding: 10px;
+    background-color: white;
+    box-shadow: 10px;
+    transition: box-shadow 0.3s;
+    z-index: 0;
+}
 
+button:active {
+    box-shadow: inset 0px 0px 8px 4px;
+}
 
 .carousel-items{
     width: 490px; /*Smooths things out*/
@@ -13,12 +23,39 @@ img {
     position: relative;
     z-index: -1;
     left: 50%;
-    transform: translate(-50%, 40%);
+    transform: translate(-46%, 40%);
     display: grid;
     grid-auto-flow: column;
+    border: 2px solid;
 }
 
 .project{
     transition: transform 0.5s ease-in-out;
 
+}
+
+.carousel-button {
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   transform: translateY(-150%); 
+}
+
+.project-text {
+    position: absolute;
+    transform: translate(23%, 50%);
+    max-width: 70%;
+    text-align: center;
+    transition: opacity 0.5s ease;
+}
+
+
+.project-text-technologies {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-text-technologies p{
+    border: 2px solid;
+    padding: 5px 15px 5px 15px;
 }
