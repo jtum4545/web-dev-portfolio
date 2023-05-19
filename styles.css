@@ -1,6 +1,7 @@
 html {
     font-family: Roboto, sans-serif;
     overflow-x: hidden; /*hides the horizontal scrollbar*/
+    cursor: none;
 }
 
 body{
@@ -21,6 +22,12 @@ a{
     color: black;
     text-decoration: none;
     font-size: 1.5rem;
+    cursor: none;
+}
+
+
+button {
+    cursor:none;
 }
 
 h1 {
@@ -28,9 +35,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-button:active {
-    background-color: black;
-}
 
 footer {
     color: black;
@@ -51,6 +55,9 @@ footer {
     opacity: 0;
 }
 
+.section, .section-no-height{
+    cursor: none;
+}
 
 .visible {
     animation: transitions 0.7s ease;
@@ -79,6 +86,21 @@ footer {
     background-color: black; 
 }
 
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 1s ease;
+
+}
+
+.cursor.hover {
+    transform: scale(4);
+}
+
+
 .nav-links {
     display:flex;
     justify-content: space-around;
@@ -101,7 +123,6 @@ footer {
 }
 
 .hero {
-
     color: black;
     display: flex;
     justify-content: center;

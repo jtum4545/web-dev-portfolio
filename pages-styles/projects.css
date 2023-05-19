@@ -1,0 +1,24 @@
+
+img {
+    height: 300px;
+    width: 500px;
+}
+
+
+
+.carousel-items{
+    width: 490px; /*Smooths things out*/
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.project{
+    transition: transform 0.5s ease-in-out;
+
+}
