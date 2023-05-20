@@ -167,7 +167,6 @@ footer {
 
 .about-me {
     position: relative;
-    text-align: center;
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
@@ -179,12 +178,14 @@ footer {
 }
 
 .about-me-content {
+    display: flex;
     border: 2px solid black;
     margin-top: 5rem;
-    width: 30%;
     padding: 20px;
     position: relative;
     min-width: 300px;
+    align-items: center;
+    text-align: center;
 }
 
 .about-me-content.left{

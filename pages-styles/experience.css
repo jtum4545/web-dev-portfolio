@@ -1,12 +1,39 @@
+.work-experience{
+    position: relative;
+    margin-bottom: 100vh;
+}
+
 .work-experience-line {
     position: absolute;
-    height: 80vh;
-    background-color: black;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
     top: 30%;
+    width: 2px;
+    background-color: black;
+    height: 700px;
 }
+
+.work-experience-content{
+    position: relative;
+    max-width: 300px;
+    text-align: center;
+    top: 25%;
+    border: 2px solid black;
+    margin-bottom: -20px;
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+}
+
+.work-experience-content.right{
+    left: 70%;
+    transform: translateX(-40%);
+}
+
+.work-experience-content.left{
+    left: 20%;
+}
+
+
 
 .testimonials {
     position: relative;
@@ -15,7 +42,7 @@
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    transform: translateX(13%);
+    transform: translate(13%, 20%);
     margin-bottom: 20rem;
 }
 
@@ -37,3 +64,19 @@
     color: black;
     font-style: italic;
 }
+
+@media screen and (max-width: 768px) {
+    .work-experience-content {
+      max-width: 70%;
+    }
+    .work-experience-line {
+        display: none;
+    }
+
+    .work-experience-content.right,
+    .work-experience-content.left {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
