@@ -10,6 +10,8 @@ for (let i = 1; i < 5; i++){
     carouselText[i].style.opacity = '0';
 }
 
+previousButton.style.opacity = '0';
+
 function carouselNext() {
 
     currentIndex += 1;
@@ -23,6 +25,11 @@ function carouselNext() {
         carouselText[currentIndex - 1].style.opacity = '0';
 
         carouselText[currentIndex].style.opacity = '1';
+        if (currentIndex == 4) {
+            nextButton.style.opacity = '0';
+        } else if (currentIndex == 1) {
+            previousButton.style.opacity = '1';
+        }
 
     }
     console.log(currentIndex);
@@ -40,6 +47,11 @@ function carouselPrevious() {
         carouselText[currentIndex + 1].style.opacity = '0';
 
         carouselText[currentIndex].style.opacity = '1';
+        if (currentIndex == 3) {
+            nextButton.style.opacity = '1';
+        } else if (currentIndex == 0) {
+            previousButton.style.opacity = '0';
+        }
     }
     console.log(currentIndex);
 
