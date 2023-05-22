@@ -40,7 +40,6 @@ openButton.forEach(button => {
     }, 3000);
 
   
-
     setTimeout(() => {
       curtainLeft.classList.remove('open');
       curtainRight.classList.remove('open');

@@ -18,7 +18,6 @@ visibleElement.forEach(element => {
 
 const cursor = document.querySelector('.cursor');
 let links = document.getElementsByTagName('a');
-let buttons = document.getElementsByTagName('button');
 
 document.addEventListener('mousemove', function(e) {
    let userMouseX = e.clientX;
@@ -36,5 +35,6 @@ for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('mouseout', function() {
     cursor.classList.remove('hover');
   });
-
 }
+
+

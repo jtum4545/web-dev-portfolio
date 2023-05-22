@@ -104,6 +104,7 @@ button:active{
     width: 70%;
     left: 15%;
     text-align: center;
+    margin-top: 25vh;
 }
 
 .education-buttons {
