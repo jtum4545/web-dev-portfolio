@@ -1,25 +1,26 @@
+/*This is relative to their parent element's height, not their actual sizes*/
 img {
     width: 100%;
     height: 100%;
-}
+} 
 
-button {
+button { /*Consistent stylings with buttons*/
     background-color: white;
     padding: 10px 20px 10px 20px;
-}
+} 
 
 button:active{
     background-color: black;
 }
-
+/*For the contents in this div*/
 .work-experience{
     position: relative;
 }
 
+/*Adds the middle line*/
 .work-experience::before {
-    content: "";
+    content: ""; /*Pseudoelements require an element and in this case, it is empty*/
     position: absolute;
-
     width: 2px;
     height: 110%;
     background-color: black;
@@ -43,7 +44,7 @@ button:active{
     left: 80%;
     transform: translateX(-100%);
 }
-
+/*Positions the right class to the right and vice versa*/
 .work-experience-content.left{
     left: 20%;
 }
@@ -57,7 +58,7 @@ button:active{
     right: 100%;
     top: calc(50% - 5px);
 }
-
+/*Adds the line at the middle of the contents based on their positions*/
 .work-experience-content.left::before{
     content: "";
     position: absolute;
@@ -118,14 +119,14 @@ button:active{
     height: 70vh;
     border: 2px solid black;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /*Hides the images out of the space provided, just in case.*/
 }
 
 .curtain-left {
-    left: -100%;
+    left: -100%; 
     transform-origin: left center;
 }
-  
+/*Hides each of the curtains before the transition, with the origin at center for a precise translation*/  
 .curtain-right {
     right: -100%;
     transform-origin: right center;
@@ -145,7 +146,7 @@ button:active{
 .curtain-left.open {
     transform: translateX(200%);
 }
-  
+/*open class will get added with javascript*/
 .curtain-right.open {
     transform: translateX(-200%);
 }
@@ -153,7 +154,7 @@ button:active{
 
 
 
-
+/*Responsive attempt*/
 @media screen and (max-width: 768px) {
     .work-experience-content {
       max-width: 70%;

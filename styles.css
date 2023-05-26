@@ -79,7 +79,7 @@ footer {
     height: 100%; 
     background-color: black; 
 }
-
+/*Adds the borders*/
 .line2 {
     position: fixed;
     top: 0;
@@ -90,13 +90,13 @@ footer {
 }
 
 .cursor {
-    position: fixed;
+    position: fixed; /*Ensures the cursor element doesn't affect content*/
     width: 10px;
     height: 10px;
     background-color: black;
     border-radius: 50%;
     transition: transform 1s ease;
-    z-index: 1;
+    z-index: 1;/*Allows cursor element to be always on top*/
 
 }
 
@@ -116,6 +116,7 @@ footer {
     height: auto;
 }
 
+/*Attempt at a responsive navbar*/
 .hamburger-menu{
     display: none;
 }
@@ -170,8 +171,8 @@ footer {
 
 .process-img {
     width: 70%;
-    z-index: -1;
-    position: absolute;
+    z-index: -1; /*Ensures the image is behind the text*/
+    position: absolute; /*The image's sizes is taken out of the DOM flow*/
     height: auto;
     opacity: 30%;
 }
@@ -197,7 +198,7 @@ footer {
     padding: 20px;
     position: relative;
     min-width: 300px;
-    align-items: center;
+    align-items: center; /*Centers text vertically and horizontally*/
     text-align: center;
     justify-content: space-around;
 }

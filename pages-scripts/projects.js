@@ -3,7 +3,8 @@ const nextButton = document.querySelector('.next-button');
 const carouselItems = document.querySelectorAll('.project');
 const carouselText = document.querySelectorAll('.project-text');
 
-let currentIndex = 0;
+//tracks the current position of the images and the current x position of the images
+let currentIndex = 0; 
 let currentPosition = 0;
 
 for (let i = 1; i < 5; i++){
@@ -12,6 +13,7 @@ for (let i = 1; i < 5; i++){
 
 previousButton.style.opacity = '0';
 
+//moves the image list to the left, shows the text that correspond with the image, and if the index is before last it will hide the next button if pressed
 function carouselNext() {
 
     currentIndex += 1;
@@ -34,6 +36,8 @@ function carouselNext() {
     }
     console.log(currentIndex);
 }
+
+//moves the image list to the right, shows the text that correspond with the image, and if the index is before first it will hide the previous button if pressed
 
 function carouselPrevious() {
     currentIndex -= 1;
