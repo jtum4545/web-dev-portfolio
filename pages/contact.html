@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact details">
     <title>Job Tumibay</title>
 
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../pages-styles/contact.css">
+
 </head>
 <body>
     <div class="line1"></div>
@@ -24,10 +27,39 @@
             <img src="../assets/menu-icon.svg" class="nav-hamburger" alt="hamburger-= menu">
         </div>
     </nav>
-    <h1 class="section">test</h1>
-    <footer>
-        <p class="footer-text">@ Job Tumibay 2023</p>
-    </footer>
+    <div class="content">
+        <div class="contact-form">
+            <form>
+                <div class="row-1">
+                    <label for="first-name"></label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Name" required>
+                    
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="namesurname@email.com" required>
+                </div>
+
+                <div class="row-2">
+                    <label for="subject"></label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>    
+                </div>
+
+                <div class="row-3">
+                    <label for="content"></label>
+                    <textarea id="content" name="content" placeholder="Content"></textarea>
+                </div>
+                
+                <div class="row-4">
+                    <button type="submit" value="Submit" class="submit-button">Submit</button>
+
+                </div>
+               
+
+            </form>
+        </div>
+        <div class="twitter-timeline">
+            <a class="twitter-timeline" data-width="400" data-height="600" data-theme="light" href="https://twitter.com/Cobratate?ref_src=twsrc%5Etfw">Tweets by Cobratate</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
     <script src="../index.js"></script>
 </body>
 </html>
