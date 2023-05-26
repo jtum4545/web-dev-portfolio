@@ -215,6 +215,7 @@ footer {
     border: 2px solid black;
 }
 
+
 @keyframes transitions {
     from{
         opacity: 0;
@@ -223,6 +224,8 @@ footer {
         opacity: 1;
     }
 }
+
+/*Responsive layout attempts*/
 
 @media screen and (max-width: 600px) {
     

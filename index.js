@@ -19,6 +19,7 @@ visibleElement.forEach(element => {
 const cursor = document.querySelector('.cursor');
 let links = document.getElementsByTagName('a');
 
+//takes the current mouse position, and places the dot cursor accordingly
 document.addEventListener('mousemove', function(e) {
    let userMouseX = e.clientX;
    let userMouseY = e.clientY;
@@ -26,6 +27,8 @@ document.addEventListener('mousemove', function(e) {
    cursor.style.left = userMouseX + 'px';
 });
 
+
+//adds the hover function to the elements selected that are hovered
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('mouseover', function() {
     cursor.classList.add('hover');
